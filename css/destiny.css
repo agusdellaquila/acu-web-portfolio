@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg-color: #FFF8F0;
+    --secondary-color: #282E3E;
+    --accent-color: #FDBD2E;
+    --main-font-color: #ffffff;
+}
+/* ------------------------------ */
+/* atoms */
+/* ___fonts */
+.mainFontColor {
+    color: var(--main-font-color);
+}
+.secondaryFontColor {
+    color: var(--secondary-color);
+}
+.accentFontColor {
+    color: var(--accent-color);
+}
+
+/* ------------------------------ */
+/* tags */
+html {
+
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+/* presentation card */
+.presentationCard {
+    background-color: var(--secondary-color);
+}
+.cardDots {
+
+}
