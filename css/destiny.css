@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 :root {
     --main-bg-color: #FFF8F0;
     --secondary-color: #282E3E;
@@ -11,7 +10,7 @@
 }
 /* ------------------------------ */
 /* atoms */
-/* ___fonts */
+/* _____fonts */
 .mainFontColor {
     color: var(--main-font-color);
 }
@@ -21,11 +20,18 @@
 .accentFontColor {
     color: var(--accent-color);
 }
-
+/* spacing */
+.containerFluid {
+    width: 100%;
+    padding-right: var(1.5rem, 0.75rem);
+    padding-left: var(1.5rem, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
 /* ------------------------------ */
 /* tags */
 html {
-
+    font-family: "popins", sans-serif;
 }
 
 body {
@@ -34,7 +40,14 @@ body {
 /* presentation card */
 .presentationCard {
     background-color: var(--secondary-color);
+    width: 85%;
+    height: 70vh;
+    border-radius: 8px;
 }
 .cardDots {
 
+}
+.animoji {
+    width: 200px;
+    height: 200px;
 }
