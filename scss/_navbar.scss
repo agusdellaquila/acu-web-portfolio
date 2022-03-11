@@ -1,0 +1,35 @@
+.navBg {
+    background-color: $secondaryColor;
+}
+.navContainer {
+    height: 50px;
+    justify-content: space-between;
+}
+.navLogo {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.navItemsContainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.navItemsContainer ul li{
+    list-style-type: none;
+    margin: 0rem 3rem;
+}
+.navItemsContainer ul li:hover{
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+}
+.navItemsContainer ul li a{
+    color: $mainColor;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    align-items: flex-end;
+}
+.navItemsContainer ul li a:hover{
+    text-decoration-color: $accentColor;
+    color: #fff8f0ab;
+}

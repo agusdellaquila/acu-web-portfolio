@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +9,123 @@
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800;900&display=swap"
+        rel="stylesheet">
     <!--Link css-->
     <link rel="stylesheet" href="css/destiny.css">
 </head>
+
 <body>
     <header>
-        <nav></nav>
+        <nav class="navBg">
+            <div class="dFlex navContainer">
+                <div class="navLogo ms4">
+                    <a href="#home">
+                        <img src="img/animoji/animojiPc.svg" alt="my dev animoji" width="50px" height="50px"/>
+                    </a>
+                </div>
+                <!-- <button data-collapse-toggle="mobile-menu" type="button" class="desktopHidden" aria-controls=""aria-expanded="false"></button> -->
+                <div class="mobileHidden navItemsContainer pb2">
+                    <ul class="navItemsFather dFlex mt4">
+                        <li class="">
+                            <a href="#" class="">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">About me</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    
+
     <main>
-        <div class="presentationCard containerFluid">
-            <!--my info-->
-            <div>
-                <div class="cardDots"></div>
-                <h1 class="mainFontColor">Agustin Dell' Aquila</h1>
-                <p class="accentFontColor">Front end Developer</p>
-                <p class="mainFontColor">I’m a professional developer based in Buenos Aires. People call me <span class="accentFontColor">Acu</span></p>
-                <button>Contact me</button>
+        <!-- SECTION: PRESENTATION -->
+        <section id="home" class="presentationCard containerFluid">
+            <!--window dots-->
+            <section class="cardDots dFlex">
+                <div id="cardDotRed"></div>
+                <div id="cardDotYellow"></div>
+                <div id="cardDotGreen"></div>
+            </section>
+
+            <section class="cardGrid">
+                <!--my info-->
+                <section class="cardInfo ms3 dFlexCol">
+                    <h1 class="fs1 mainFontColor fwBolder mb1">Agustin <br> Dell' Aquila</h1>
+                    <p class="accentFontColor fs4 fwBold mb3">Front end Developer</p>
+                    <p class="mainFontColor fs5 mb4">I’m a professional developer based in <br> Buenos Aires. People
+                        call me <span class="accentFontColor fwBold">Acu</span></p>
+                    <button class="btn btnPrimary fs5">Contact me</button>
+                </section>
+                <!--my animoji-->
+                <section class="cardPhoto containerFluid me3">
+                    <img class="animoji" src="img/animoji/animoji_peace.png" alt="my animoji">
+                </section>
+            </section>
+        </section>
+
+        <!-- SECTION: PROJECTS -->
+        <section id="projects" class="centered dFlexCol mt5">
+            <h2 class="fs2 fwBold mb4">Some things I’ve built!</h2>
+            <div class="cmdWindowTab">
+                <p class="fwBold ms4 mt3">Command Prompt</p>
             </div>
-            <!--my animoji-->
-            <div>
-                <img class="animoji" src="img/animoji/animoji_peace.png" alt="my animoji">
-                <!--yellow linear bg-->
+            <div class="cmdWindow">
+                <p class="mainFontColor fwBold ms4 mt4">Microsoft Windows [Version 10.0.19043.1586] <br>
+                    (c) Microsoft Corporation. All rights reserved. <br>
+                    C:\Users\Acu\<span class="accentFontColor">Projects</span>
+                </p>
+                <!-- _________________PROJECTS_________________ -->
+                <div class="projectsLayout">
+                    <section class="projectsLayoutRow mt5">
+                        <div class="card">
+                            <img src="img/download.png" alt="Denim Jeans" style="width:100%">
+                            <h1 class="mainFontColor mt4">Project #</h1>
+                            <p class="mainFontColor mt1">project description...</p>
+                            <a class="mainFontColor noUnderline mt2">View</a>
+                        </div>
+                        <div class="card">
+                            <img src="img/download.png" alt="Denim Jeans" style="width:100%">
+                            <h1 class="mainFontColor mt4">Project #</h1>
+                            <p class="mainFontColor mt1">project description...</p>
+                            <a class="mainFontColor noUnderline mt2">View</a>
+                        </div>
+                    </section>
+                    <section class="projectsLayoutRow mt5 mb5">
+                        <div class="card">
+                            <img src="img/download.png" alt="Denim Jeans" style="width:100%">
+                            <h1 class="mainFontColor mt4">Project #</h1>
+                            <p class="mainFontColor mt1">project description...</p>
+                            <a class="mainFontColor noUnderline mt2">View</a>
+                        </div>
+                        <div class="card">
+                            <img src="img/download.png" alt="Denim Jeans" style="width:100%">
+                            <h1 class="mainFontColor mt4">Project #</h1>
+                            <p class="mainFontColor mt1">project description...</p>
+                            <a class="mainFontColor noUnderline mt2">View</a>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- SECTION: SERVICES -->
+        <section class="centered dFlexCol mt5">
+            <h2 class="fs2 fwBold mb4">Services</h2>
+        </section>
     </main>
-    
+
     <footer></footer>
 </body>
+
 </html>

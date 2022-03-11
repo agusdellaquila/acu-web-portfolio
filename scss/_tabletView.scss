@@ -1,0 +1,9 @@
+@media (min-width: 576px) and (max-width: 1001px) {
+    .mobileHidden {
+        display: none !important;
+    }
+
+    .desktopHidden {
+        display: inherit !important;
+    }
+}

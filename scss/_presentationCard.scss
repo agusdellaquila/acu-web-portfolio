@@ -1,0 +1,55 @@
+/* presentation card */
+.presentationCard {
+    background-color: $secondaryColor;
+    width: 85%;
+    height: 70vh;
+    border-radius: 8px;
+    margin-top: 15vh;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.856);
+}
+.cardGrid{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0em; 
+    grid-template-areas: 
+        "info photo"; 
+    place-items: center;
+    height: inherit;
+}
+.cardDots {
+    margin: 5px 0px 0px 10px;
+}
+.cardDots div{
+    background-color: #FDBD2E;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border-radius: 50%;
+    justify-content: space-around;
+}
+#cardDotRed {
+    background-color: #FC5E59;
+}
+#cardDotYellow {
+    background-color: #FDBD2E;
+}
+#cardDotGreen {
+    background-color: #28CA47;
+}
+.cardInfo {
+    grid-area: info;
+}
+.cardPhoto {
+    grid-area: photo;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.animoji {
+    width: 25rem; //responsive
+    height: 25rem;
+    background-image: url("../img/animoji/animojiBg.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+}

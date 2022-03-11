@@ -1,0 +1,33 @@
+.cmdWindowTab {
+    background-color: #CACACA;
+    height: 56px;
+    width: 85%;
+    border-radius: 8px 8px 0px 0px;
+}
+.cmdWindow {
+    background-color: #000000;
+    height: max-content;
+    width: 85%;
+    border-radius: 0px 0px 8px 8px;
+}
+.projectsLayout {
+    display: flex;
+    flex-direction: column;
+}
+.projectsLayoutRow{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 425px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    height: inherit;
+    width: inherit;
+    background-color: rgb(255, 0, 0);
+}
