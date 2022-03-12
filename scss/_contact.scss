@@ -1,0 +1,37 @@
+.contactInfo {
+    margin-bottom: 4rem;
+}
+.infoTab {
+    background-color: #fdbd2d;
+    border-radius: 8px 8px 0px 0px;
+    height: max-content;
+    padding: 1rem;
+}
+.infoWindow {
+    background-color: #fcfcfc;
+    height: max-content;
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+}
+.contactForm {
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    margin-bottom: 4rem;
+}
+.contactForm input{
+    height: 30px;
+    background-color: $mainColor;
+}
+.contactForm textarea{
+    background-color: $mainColor;
+}
+.formInput {
+    font-family: "popins", sans-serif;
+    font-weight: 600;
+    border-radius: 2px;
+    border: 0px;
+}

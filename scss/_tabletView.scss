@@ -1,9 +1,51 @@
-@media (min-width: 576px) and (max-width: 1001px) {
+@media (min-width: 800px) and (max-width: 1020px) {
     .mobileHidden {
         display: none !important;
     }
 
     .desktopHidden {
         display: inherit !important;
+    }
+    
+    //Presentation card Desktop
+    .cardGrid{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        padding: 0rem !important;
+    }
+    .cardGrid button {
+        width: 45% !important;
+        margin: 2rem 0rem !important;
+    }
+    //Projects Desktop
+    .projectDisplays {
+        display: grid !important; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;  
+        grid-template-areas: 
+            "p1 p2"
+            "p3 p4"; 
+        place-items: center;
+        grid-column-gap: 10px;
+        height: inherit;
+    }
+    .project1 {
+        grid-area: p1;
+    }
+    .project2 {
+        grid-area: p2;
+    }
+    .project3 {
+        grid-area: p3;
+    }
+    .project4 {
+        grid-area: p4;
+    }
+
+    //Contact me Desktop
+    .contact {
+        display: flex !important;
     }
 }

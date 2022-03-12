@@ -7,9 +7,13 @@
     display: inherit !important;
 }
 /*  ______________________________Texts */
+/* ________font alignments */
+.textAlignCenter {
+    text-align: center;
+}
 /* ________font color */
 .mainFontColor {
-    color: $mainColor;
+    color: $mainFontColor;
 }
 .secondaryFontColor {
     color: $secondaryColor;
@@ -48,9 +52,12 @@
 .fwBolder {
     font-weight: 700;
 }
-/* ________underline */
+/* ________decoration */
 .noUnderline {
     text-decoration: none;
+}
+.noBullet {
+    list-style-type: none;
 }
 /* ______________________________spacing */
 /* ________displays */
@@ -290,5 +297,4 @@
 .ps5 {
     padding-left: 3rem;
 }
-  
 /*  ______________________________ */

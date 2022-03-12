@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agustin Dell Aquila | Web developer</title>
+    <!-- window logo -->
+    <link rel="shortcut icon" href="img/animoji/animojiPc.svg" />
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +15,8 @@
         rel="stylesheet">
     <!--Link css-->
     <link rel="stylesheet" href="css/destiny.css">
+    <!--animate scroll css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +24,7 @@
         <nav class="navBg">
             <div class="dFlex navContainer">
                 <div class="navLogo ms4">
-                    <a href="#home">
+                    <a href="#">
                         <img src="img/animoji/animojiPc.svg" alt="my dev animoji" width="50px" height="50px"/>
                     </a>
                 </div>
@@ -48,7 +52,7 @@
         </nav>
     </header>
 
-    <main>
+    <section>
         <!-- SECTION: PRESENTATION -->
         <section id="home" class="presentationCard containerFluid">
             <!--window dots-->
@@ -60,15 +64,15 @@
 
             <section class="cardGrid">
                 <!--my info-->
-                <section class="cardInfo ms3 dFlexCol">
+                <section class="cardInfo dFlexCol" data-aos="fade-right" data-aos-duration="1000">
                     <h1 class="fs1 mainFontColor fwBolder mb1">Agustin <br> Dell' Aquila</h1>
                     <p class="accentFontColor fs4 fwBold mb3">Front end Developer</p>
                     <p class="mainFontColor fs5 mb4">I’m a professional developer based in <br> Buenos Aires. People
                         call me <span class="accentFontColor fwBold">Acu</span></p>
-                    <button class="btn btnPrimary fs5">Contact me</button>
+                    <button class="btn btnPrimary fs5" data-aos="fade-right" data-aos-duration="1000">Contact me</button>
                 </section>
                 <!--my animoji-->
-                <section class="cardPhoto containerFluid me3">
+                <section class="cardPhoto dFlex me3" data-aos="fade-up" data-aos-duration="1000">
                     <img class="animoji" src="img/animoji/animoji_peace.png" alt="my animoji">
                 </section>
             </section>
@@ -78,7 +82,7 @@
         <section id="projects" class="centered dFlexCol mt5">
             <h2 class="fs2 fwBold mb4">Some things I’ve built!</h2>
             <div class="cmdWindowTab">
-                <p class="fwBold ms4 mt3">Command Prompt</p>
+                <p class="cmdTitle fwBold ms4 mt3">Command Prompt</p>
             </div>
             <div class="cmdWindow">
                 <p class="mainFontColor fwBold ms4 mt4">Microsoft Windows [Version 10.0.19043.1586] <br>
@@ -86,35 +90,31 @@
                     C:\Users\Acu\<span class="accentFontColor">Projects</span>
                 </p>
                 <!-- _________________PROJECTS_________________ -->
-                <div class="projectsLayout">
-                    <section class="projectsLayoutRow mt5">
-                        <div class="card">
-                            <img src="img/download.png" alt="Denim Jeans" style="width:100%">
-                            <h1 class="mainFontColor mt4">Project #</h1>
-                            <p class="mainFontColor mt1">project description...</p>
-                            <a class="mainFontColor noUnderline mt2">View</a>
-                        </div>
-                        <div class="card">
-                            <img src="img/download.png" alt="Denim Jeans" style="width:100%">
-                            <h1 class="mainFontColor mt4">Project #</h1>
-                            <p class="mainFontColor mt1">project description...</p>
-                            <a class="mainFontColor noUnderline mt2">View</a>
-                        </div>
-                    </section>
-                    <section class="projectsLayoutRow mt5 mb5">
-                        <div class="card">
-                            <img src="img/download.png" alt="Denim Jeans" style="width:100%">
-                            <h1 class="mainFontColor mt4">Project #</h1>
-                            <p class="mainFontColor mt1">project description...</p>
-                            <a class="mainFontColor noUnderline mt2">View</a>
-                        </div>
-                        <div class="card">
-                            <img src="img/download.png" alt="Denim Jeans" style="width:100%">
-                            <h1 class="mainFontColor mt4">Project #</h1>
-                            <p class="mainFontColor mt1">project description...</p>
-                            <a class="mainFontColor noUnderline mt2">View</a>
-                        </div>
-                    </section>
+                <div class="projectDisplays mt5 ms3 me3">
+                    <div class="project1 card">
+                        <img src="img/projectShowcase/onlytracer-cropped.svg" alt="Denim Jeans" width="300px" height="300px">
+                        <h1 class="mainFontColor mt4 fs3">Cobra Denim</h1>
+                        <p class="mainFontColor textAlignCenter mt1">This is my first ever website, a fully fledged e-commerce based on a brand designed by me.</p>
+                        <a href="https://cobra-denim.vercel.app/" target="_blank" class="mainFontColor noUnderline mt2 mb5 accentFontColor fwBold">Take a look</a>
+                    </div>
+                    <div class="project2 card">
+                        <img src="img/download.png" alt="Denim Jeans" width="300px" height="300px">
+                        <h1 class="mainFontColor mt4 fs3">EnPie Wines</h1>
+                        <p class="mainFontColor mt1">project description...</p>
+                        <a target="_blank" class="mainFontColor noUnderline mt2 mb5 accentFontColor fwBold">Take a look</a>
+                    </div>
+                    <div class="project3 card">
+                        <img src="img/download.png" alt="Denim Jeans" width="300px" height="300px">
+                        <h1 class="mainFontColor mt4 fs3">Project #</h1>
+                        <p class="mainFontColor mt1">project description...</p>
+                        <a target="_blank" class="mainFontColor noUnderline mt2 mb5 accentFontColor fwBold">Take a look</a>
+                    </div>
+                    <div class="project4 card">
+                        <img src="img/download.png" alt="Denim Jeans" width="300px" height="300px">
+                        <h1 class="mainFontColor mt4 fs3">This website!</h1>
+                        <p class="mainFontColor mt1">project description...</p>
+                        <a target="_blank" class="mainFontColor noUnderline mt2 mb5 accentFontColor fwBold">Take a look</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -123,9 +123,80 @@
         <section class="centered dFlexCol mt5">
             <h2 class="fs2 fwBold mb4">Services</h2>
         </section>
+
+        <!-- SECTION: ABOUT ME -->
+        <section class="centered dFlexCol mt5">
+            <h2 class="fs2 fwBold mb4">About Me</h2>
+        </section>
+
+        <!-- SECTION:  CONTACT ME-->
+        <section class="contactContainer centered dFlexCol mt5">
+            <h2 class="fs2 fwBold mb4">Contact Me</h2>
+            <div class="contact">
+                <div class="contactInfo me3">
+                    <!-- my info -->
+                    <div class="infoTab"></div>
+                    <div class="infoWindow dFlexCol mt3">
+                        <div class="dFlex ms3">
+                            <a href="https://www.linkedin.com/in/agustin-dell-aquila-a5b2451b2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtZOt1B%2B%2FRwSvTkR3q67M7g%3D%3D" target="_blank" class="noUnderline"><img src="img/socialMedia/icons8-linkedin.svg" alt="my linkedIn profile"></a>
+                            <p class="centered ms3 fwBold">LinkedIn</p>
+                        </div>
+                        <div class="dFlex ms3">
+                            <a href="https://github.com/" target="_blank" class="noUnderline"><img src="img/socialMedia/githubIcon.png" alt="my github github" width="48px" height="48px"></a>
+                            <p class="centered ms3 fwBold">Github</p>
+                        </div>
+                        <div class="dFlex ms3">
+                            <a href="https://twitter.com/acu__js" target="_blank" class="noUnderline"><img src="img/socialMedia/icons8-twitter.svg" alt="my twitter profile"></a>
+                            <p class="centered ms3 fwBold">Twitter</p>
+                        </div>
+                        <div class="dFlex ms3 mb3">
+                            <img src="img/socialMedia/icons8-email.png" alt="my email">
+                            <p class="centered ms3 fwBold">agusdellaquila72@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm dFlexCol ms3">
+                    <!-- contact form -->
+                    <label class="fwBold" for="fname">Your full name</label>
+                    <input id="contactFullName" class="formInput contactBoxes mb3" type="text" name="nombre"/>
+
+                    <label class="fwBold" for="fname">Your email</label>
+                    <input id="contactEmail" class="formInput contactBoxes mb3" type="email" name="mail"/>
+                    
+                    <label class="fwBold" for="fname">Subject</label>
+                    <textarea id="contactMessage" class="formInput contactTextarea mb3" rows="10" cols="40"></textarea>
+                    
+                    <button class="btn btnPrimary fwBold fs5 mb3" onclick="recieveContactEmail()">Submit</button>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
-</body>
+    <footer>
+        <section> <!--social media-->
+            <div class="dFlexCol centered">
+                <ul class="centered mt4 mb4">
+                    <li class="noBullet me3">
+                        <a href="https://www.linkedin.com/in/agustin-dell-aquila-a5b2451b2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtZOt1B%2B%2FRwSvTkR3q67M7g%3D%3D" target="_blank" class="noUnderline"><img src="img/socialMedia/icons8-linkedin.svg" alt="my linkedIn profile"></a>
+                    </li>
+                    <li class="noBullet ms3 me3">
+                        <a href="https://github.com/" target="_blank" class="noUnderline"><img src="img/socialMedia/githubIcon.png" alt="my github github" width="48px" height="48px"></a>
+                    </li>
+                    <li class="noBullet ms3">
+                        <a href="https://twitter.com/acu__js" target="_blank" class="noUnderline"><img src="img/socialMedia/icons8-twitter.svg" alt="my twitter profile"></a>
+                    </li>
+                </ul>
+                <div class="dFlex mb3 centered">
+                    <img src="img/socialMedia/icons8-email.png" alt="email logo">
+                    <p class="accentFontColor fwBold fs5 ms2">agusdellaquila72@gmail.com</p>
+                </div>
+                <p class="footerCr mainFontColor mb4">© Agustin Dell Aquila. All Rights Reserved. Buenos Aires, AR.</p>
+            </div>
+        </section>
+    </footer>
 
+    <!-- js animate scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
 </html>

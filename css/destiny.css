@@ -6,9 +6,13 @@
   display: inherit !important; }
 
 /*  ______________________________Texts */
+/* ________font alignments */
+.textAlignCenter {
+  text-align: center; }
+
 /* ________font color */
 .mainFontColor {
-  color: #FFF8F0; }
+  color: #ffffff; }
 
 .secondaryFontColor {
   color: #282E3E; }
@@ -45,9 +49,12 @@
 .fwBolder {
   font-weight: 700; }
 
-/* ________underline */
+/* ________decoration */
 .noUnderline {
   text-decoration: none; }
+
+.noBullet {
+  list-style-type: none; }
 
 /* ______________________________spacing */
 /* ________displays */
@@ -298,20 +305,86 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: var(#FFF8F0); }
+  background-color: #ffffff; }
 
 /* ------------------------------ */
-@media (min-width: 1002px) {
+@media (min-width: 1020px) {
   .mobileHidden {
     display: inherit !important; }
   .desktopHidden {
-    display: none !important; } }
+    display: none !important; }
+  .cardGrid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "info photo";
+    place-items: center;
+    height: inherit; }
+  .cardGrid button {
+    width: 45% !important; }
+  .cardInfo {
+    grid-area: info; }
+  .cardPhoto {
+    grid-area: photo;
+    display: grid;
+    justify-content: center;
+    align-content: center; }
+  .projectDisplays {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "p1 p2" "p3 p4";
+    place-items: center;
+    height: inherit; }
+  .project1 {
+    grid-area: p1; }
+  .project2 {
+    grid-area: p2; }
+  .project3 {
+    grid-area: p3; }
+  .project4 {
+    grid-area: p4; }
+  .contact {
+    display: flex !important; } }
 
-@media (min-width: 576px) and (max-width: 1001px) {
+@media (min-width: 800px) and (max-width: 1020px) {
   .mobileHidden {
     display: none !important; }
   .desktopHidden {
-    display: inherit !important; } }
+    display: inherit !important; }
+  .cardGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem !important; }
+  .cardGrid button {
+    width: 45% !important;
+    margin: 2rem 0rem !important; }
+  .projectDisplays {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "p1 p2" "p3 p4";
+    place-items: center;
+    grid-column-gap: 10px;
+    height: inherit; }
+  .project1 {
+    grid-area: p1; }
+  .project2 {
+    grid-area: p2; }
+  .project3 {
+    grid-area: p3; }
+  .project4 {
+    grid-area: p4; }
+  .contact {
+    display: flex !important; } }
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
 
 .navBg {
   background-color: #282E3E; }
@@ -352,28 +425,32 @@ body {
 .presentationCard {
   background-color: #282E3E;
   width: 85%;
-  height: 70vh;
+  min-width: 185px;
+  height: max-content;
   border-radius: 8px;
   margin-top: 15vh;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.856); }
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); }
 
 .cardGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0em;
-  grid-template-areas: "info photo";
-  place-items: center;
-  height: inherit; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 2rem 2rem 2rem 2rem; }
+
+.cardGrid button {
+  width: auto;
+  margin-top: 2rem; }
 
 .cardDots {
-  margin: 5px 0px 0px 10px; }
+  margin: 0px 0px 0px 10px; }
 
 .cardDots div {
   background-color: #FDBD2E;
   width: 15px;
   height: 15px;
-  margin: 5px;
+  margin: 15px 5px 0px 5px;
   border-radius: 50%;
   justify-content: space-around; }
 
@@ -387,20 +464,16 @@ body {
   background-color: #28CA47; }
 
 .cardInfo {
-  grid-area: info; }
+  margin-bottom: 2rem; }
 
 .cardPhoto {
-  grid-area: photo;
-  display: grid;
-  justify-content: center;
-  align-content: center; }
+  max-width: 300px;
+  min-width: 105px;
+  padding-left: 2rem; }
 
 .animoji {
-  width: 25rem;
-  height: 25rem;
-  background-image: url("../img/animoji/animojiBg.png");
-  background-repeat: no-repeat;
-  background-size: auto; }
+  width: 100%;
+  height: auto; }
 
 .cmdWindowTab {
   background-color: #CACACA;
@@ -408,22 +481,25 @@ body {
   width: 85%;
   border-radius: 8px 8px 0px 0px; }
 
+.cmdTitle {
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 0px 0px;
+  width: max-content;
+  height: max-content;
+  padding: 1rem; }
+
 .cmdWindow {
   background-color: #000000;
   height: max-content;
   width: 85%;
-  border-radius: 0px 0px 8px 8px; }
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); }
 
-.projectsLayout {
+.projectDisplays {
   display: flex;
-  flex-direction: column; }
-
-.projectsLayoutRow {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  height: 425px; }
+  align-items: center; }
 
 .card {
   display: flex;
@@ -431,6 +507,46 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0px auto;
-  height: inherit;
-  width: inherit;
-  background-color: red; }
+  height: max-content;
+  width: 300px; }
+
+.contactInfo {
+  margin-bottom: 4rem; }
+
+.infoTab {
+  background-color: #fdbd2d;
+  border-radius: 8px 8px 0px 0px;
+  height: max-content;
+  padding: 1rem; }
+
+.infoWindow {
+  background-color: #fcfcfc;
+  height: max-content;
+  width: 100%;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); }
+
+.contactForm {
+  backdrop-filter: blur(14px);
+  background-color: rgba(255, 255, 255, 0.253);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  margin-bottom: 4rem; }
+
+.contactForm input {
+  height: 30px;
+  background-color: #FFF8F0; }
+
+.contactForm textarea {
+  background-color: #FFF8F0; }
+
+.formInput {
+  font-family: "popins", sans-serif;
+  font-weight: 600;
+  border-radius: 2px;
+  border: 0px; }
+
+footer {
+  background-color: #282E3E;
+  height: max-content; }

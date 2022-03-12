@@ -1,9 +1,15 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
 .navBg {
     background-color: $secondaryColor;
 }
 .navContainer {
     height: 50px;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 .navLogo {
     align-items: flex-start;
