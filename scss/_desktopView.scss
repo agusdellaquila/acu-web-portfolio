@@ -55,6 +55,15 @@
     }
     //Contact me Desktop
     .contact {
-        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        width: 85% !important;
+        margin-bottom: 4rem;
+    }
+    .contactInfo {
+        margin: 0 auto;
+    }
+    .contactForm {
+        margin: 0 auto;
     }
 }

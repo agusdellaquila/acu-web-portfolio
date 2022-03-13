@@ -345,7 +345,14 @@ body {
   .project4 {
     grid-area: p4; }
   .contact {
-    display: flex !important; } }
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    width: 85% !important;
+    margin-bottom: 4rem; }
+  .contactInfo {
+    margin: 0 auto; }
+  .contactForm {
+    margin: 0 auto; } }
 
 @media (min-width: 800px) and (max-width: 1020px) {
   .mobileHidden {
@@ -378,7 +385,14 @@ body {
   .project4 {
     grid-area: p4; }
   .contact {
-    display: flex !important; } }
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    width: 85% !important;
+    margin-bottom: 4rem; }
+  .contactInfo {
+    margin: 0 auto; }
+  .contactForm {
+    margin: 0 auto; } }
 
 nav {
   position: fixed;
@@ -391,7 +405,8 @@ nav {
 
 .navContainer {
   height: 50px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 5px; }
 
 .navLogo {
   align-items: flex-start;
@@ -510,29 +525,51 @@ nav {
   height: max-content;
   width: 300px; }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .contactInfo {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  display: inline-block; }
 
 .infoTab {
   background-color: #fdbd2d;
   border-radius: 8px 8px 0px 0px;
   height: max-content;
-  padding: 1rem; }
+  padding: 0.5rem 1rem;
+  width: max-content; }
 
 .infoWindow {
   background-color: #fcfcfc;
   height: max-content;
-  width: 100%;
+  width: max-content;
   border-radius: 0px 0px 8px 8px;
-  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); }
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  padding: 0 1rem 1rem 1rem; }
+
+.infoItem {
+  display: flex; }
 
 .contactForm {
-  backdrop-filter: blur(14px);
-  background-color: rgba(255, 255, 255, 0.253);
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
   margin-bottom: 4rem; }
+
+.formTab {
+  background-color: #5ac0e7;
+  border-radius: 8px 8px 0px 0px;
+  height: max-content;
+  padding: 0.5rem 1rem;
+  width: max-content; }
+
+.formWindow {
+  background-color: #fcfcfc;
+  height: max-content;
+  width: max-content;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  padding: 1rem; }
 
 .contactForm input {
   height: 30px;

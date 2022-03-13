@@ -17,18 +17,22 @@
     <link rel="stylesheet" href="css/destiny.css">
     <!--animate scroll css-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--toastify css-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
     <header>
         <nav class="navBg">
             <div class="dFlex navContainer">
-                <div class="navLogo ms4">
+                <div class="navLogo ms2">
                     <a href="#">
                         <img src="img/animoji/animojiPc.svg" alt="my dev animoji" width="50px" height="50px"/>
                     </a>
                 </div>
-                <!-- <button data-collapse-toggle="mobile-menu" type="button" class="desktopHidden" aria-controls=""aria-expanded="false"></button> -->
+                <div class="header_toggle">
+                    <img src="img/menuIcon.png" id="header-toggle" class="desktopHidden me2 mt2" width="50px" height="30px"></img>
+                </div>
                 <div class="mobileHidden navItemsContainer pb2">
                     <ul class="navItemsFather dFlex mt4">
                         <li class="">
@@ -95,25 +99,25 @@
                         <img src="img/projectShowcase/onlytracer-cropped.svg" alt="Denim Jeans" width="300px" height="300px">
                         <h1 class="mainFontColor mt4 fs3">Cobra Denim</h1>
                         <p class="mainFontColor textAlignCenter mt1">This is my first ever website, a fully fledged e-commerce based on a brand designed by me.</p>
-                        <a href="https://cobra-denim.vercel.app/" target="_blank" class="mainFontColor noUnderline mt2 mb5 accentFontColor fwBold">Take a look</a>
+                        <a href="https://cobra-denim.vercel.app/" target="_blank" class="mainFontColor mt2 mb5 accentFontColor fwBold">Take a look</a>
                     </div>
                     <div class="project2 card">
                         <img src="img/download.png" alt="Denim Jeans" width="300px" height="300px">
                         <h1 class="mainFontColor mt4 fs3">EnPie Wines</h1>
                         <p class="mainFontColor mt1">project description...</p>
-                        <a target="_blank" class="mainFontColor noUnderline mt2 mb5 accentFontColor fwBold">Take a look</a>
+                        <a target="_blank" class="mainFontColor mt2 mb5 accentFontColor fwBold">Take a look</a>
                     </div>
                     <div class="project3 card">
                         <img src="img/download.png" alt="Denim Jeans" width="300px" height="300px">
                         <h1 class="mainFontColor mt4 fs3">Project #</h1>
                         <p class="mainFontColor mt1">project description...</p>
-                        <a target="_blank" class="mainFontColor noUnderline mt2 mb5 accentFontColor fwBold">Take a look</a>
+                        <a target="_blank" class="mainFontColor mt2 mb5 accentFontColor fwBold">Take a look</a>
                     </div>
                     <div class="project4 card">
                         <img src="img/download.png" alt="Denim Jeans" width="300px" height="300px">
                         <h1 class="mainFontColor mt4 fs3">This website!</h1>
                         <p class="mainFontColor mt1">project description...</p>
-                        <a target="_blank" class="mainFontColor noUnderline mt2 mb5 accentFontColor fwBold">Take a look</a>
+                        <a target="_blank" class="mainFontColor mt2 mb5 accentFontColor fwBold">Take a look</a>
                     </div>
                 </div>
             </div>
@@ -132,41 +136,46 @@
         <!-- SECTION:  CONTACT ME-->
         <section class="contactContainer centered dFlexCol mt5">
             <h2 class="fs2 fwBold mb4">Contact Me</h2>
-            <div class="contact">
-                <div class="contactInfo me3">
+            <div class="contact containerFluid">
+                <div class="contactInfo">
+                    <!-- yellow form tab -->
+                    <div class="infoTab"><p class="fwBold fs5">Socials</p></div>
                     <!-- my info -->
-                    <div class="infoTab"></div>
                     <div class="infoWindow dFlexCol mt3">
-                        <div class="dFlex ms3">
+                        <div class="infoItem">
                             <a href="https://www.linkedin.com/in/agustin-dell-aquila-a5b2451b2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtZOt1B%2B%2FRwSvTkR3q67M7g%3D%3D" target="_blank" class="noUnderline"><img src="img/socialMedia/icons8-linkedin.svg" alt="my linkedIn profile"></a>
                             <p class="centered ms3 fwBold">LinkedIn</p>
                         </div>
-                        <div class="dFlex ms3">
+                        <div class="infoItem">
                             <a href="https://github.com/" target="_blank" class="noUnderline"><img src="img/socialMedia/githubIcon.png" alt="my github github" width="48px" height="48px"></a>
                             <p class="centered ms3 fwBold">Github</p>
                         </div>
-                        <div class="dFlex ms3">
+                        <div class="infoItem">
                             <a href="https://twitter.com/acu__js" target="_blank" class="noUnderline"><img src="img/socialMedia/icons8-twitter.svg" alt="my twitter profile"></a>
                             <p class="centered ms3 fwBold">Twitter</p>
                         </div>
-                        <div class="dFlex ms3 mb3">
+                        <div class="infoItem">
                             <img src="img/socialMedia/icons8-email.png" alt="my email">
-                            <p class="centered ms3 fwBold">agusdellaquila72@gmail.com</p>
+                            <p class="centered ms3 me4 fwBold">agusdellaquila72@gmail.com</p>
                         </div>
                     </div>
                 </div>
-                <div class="contactForm dFlexCol ms3">
+                <div class="contactForm">
+                    <!-- light blue form tab -->
+                    <div class="formTab"><p class="fwBold fs5">Lets talk!</p></div>
                     <!-- contact form -->
-                    <label class="fwBold" for="fname">Your full name</label>
-                    <input id="contactFullName" class="formInput contactBoxes mb3" type="text" name="nombre"/>
-
-                    <label class="fwBold" for="fname">Your email</label>
-                    <input id="contactEmail" class="formInput contactBoxes mb3" type="email" name="mail"/>
-                    
-                    <label class="fwBold" for="fname">Subject</label>
-                    <textarea id="contactMessage" class="formInput contactTextarea mb3" rows="10" cols="40"></textarea>
-                    
-                    <button class="btn btnPrimary fwBold fs5 mb3" onclick="recieveContactEmail()">Submit</button>
+                    <div class="formWindow dFlexCol">
+                        <p class="fwBold">Your full name</p>
+                        <input id="contactFullName" class="formInput contactBoxes mb3" type="text" name="nombre"/>
+    
+                        <p class="fwBold">Your email</p>
+                        <input id="contactEmail" class="formInput contactBoxes mb3" type="email" name="mail"/>
+                        
+                        <p class="fwBold">Subject</p>
+                        <textarea id="contactMessage" class="formInput contactTextarea mb3" rows="10" cols="40"></textarea>
+                        
+                        <button class="btn btnPrimary fwBold fs5 mb3" onclick="recieveContactEmail()">Submit</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -187,7 +196,7 @@
                     </li>
                 </ul>
                 <div class="dFlex mb3 centered">
-                    <img src="img/socialMedia/icons8-email.png" alt="email logo">
+                    <img src="img/socialMedia/icons8-email-48.png" alt="email logo">
                     <p class="accentFontColor fwBold fs5 ms2">agusdellaquila72@gmail.com</p>
                 </div>
                 <p class="footerCr mainFontColor mb4">© Agustin Dell Aquila. All Rights Reserved. Buenos Aires, AR.</p>
@@ -195,8 +204,19 @@
         </section>
     </footer>
 
+    <!-- mt js files -->
+    <script src="js/contactForm.js"></script>
     <!-- js animate scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+    <!--toastify js-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!--EmailJS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("u2zEtLSxSt4wcJ4bZ");
+    })();
+    </script>
 </body>
 </html>
