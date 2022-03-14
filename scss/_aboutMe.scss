@@ -1,0 +1,19 @@
+.aboutMeSection {
+    background-color: $secondaryColor;
+}
+.aboutMeCard{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 2rem;
+}
+.acuPhoto {
+    max-width: 300px;
+    min-width: 105px;
+}
+.acuPh {
+    width: 100%;
+    height: auto;
+}

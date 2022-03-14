@@ -30,8 +30,9 @@
                         <img src="img/animoji/animojiPc.svg" alt="my dev animoji" width="50px" height="50px"/>
                     </a>
                 </div>
+                <!-- mobile nav -->
                 <div class="header_toggle">
-                    <img src="img/menuIcon.png" id="header-toggle" class="desktopHidden me2 mt2" width="50px" height="30px"></img>
+                    <img src="img/menuIcon.svg" id="header-toggle" class="desktopHidden me2 mt2" width="50px" height="30px"></img>
                 </div>
                 <div class="mobileHidden navItemsContainer pb2">
                     <ul class="navItemsFather dFlex mt4">
@@ -48,7 +49,7 @@
                             <a href="#" class="">Services</a>
                         </li>
                         <li>
-                            <a href="#" class="">Contact me</a>
+                            <a href="#contact" class="">Contact me</a>
                         </li>
                     </ul>
                 </div>
@@ -73,7 +74,7 @@
                     <p class="accentFontColor fs4 fwBold mb3">Front end Developer</p>
                     <p class="mainFontColor fs5 mb4">I’m a professional developer based in <br> Buenos Aires. People
                         call me <span class="accentFontColor fwBold">Acu</span></p>
-                    <button class="btn btnPrimary fs5" data-aos="fade-right" data-aos-duration="1000">Contact me</button>
+                    <a href="#contact"><button class="btn btnPrimary fs5" data-aos="fade-right" data-aos-duration="1000">Contact me</button></a>
                 </section>
                 <!--my animoji-->
                 <section class="cardPhoto dFlex me3" data-aos="fade-up" data-aos-duration="1000">
@@ -129,12 +130,25 @@
         </section>
 
         <!-- SECTION: ABOUT ME -->
-        <section class="centered dFlexCol mt5">
-            <h2 class="fs2 fwBold mb4">About Me</h2>
+        <section class="aboutMeSection centered dFlexCol mt5">
+            <section class="aboutMeCard">
+                <!--my photo-->
+                <section class="acuPhoto">
+                    <img class="acuPh" src="img/aboutMe/Frame 2.png" alt="my photo">
+                </section>
+                <!--about me-->
+                <section class="dFlexCol centered">
+                    <h2 class="fs2 fwBold mb4 mainFontColor mt3 accentFontColor">About Me</h2>
+                    <p class="fwBold centered textAlignCenter mainFontColor">I'm a Front end developer to become a Fullstack dev in a couple of months. <br> <br>
+                        The things that I enjoy the most are programming and playing videogames. Also I'm a huge enthusiast of the crypto and NFT space. <br> <br>
+                        I don't like videogame tutorials because I believe trial and error is the best way to learn and I apply that philosophy to my day to day.</p>
+                </section>
+            </section>
+
         </section>
 
         <!-- SECTION:  CONTACT ME-->
-        <section class="contactContainer centered dFlexCol mt5">
+        <section id='contact' class="contactContainer centered dFlexCol mt5">
             <h2 class="fs2 fwBold mb4">Contact Me</h2>
             <div class="contact containerFluid">
                 <div class="contactInfo">

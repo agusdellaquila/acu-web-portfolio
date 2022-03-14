@@ -490,6 +490,25 @@ nav {
   width: 100%;
   height: auto; }
 
+.aboutMeSection {
+  background-color: #282E3E; }
+
+.aboutMeCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 2rem; }
+
+.acuPhoto {
+  max-width: 300px;
+  min-width: 105px; }
+
+.acuPh {
+  width: 100%;
+  height: auto; }
+
 .cmdWindowTab {
   background-color: #CACACA;
   height: 56px;
@@ -536,7 +555,7 @@ nav {
   display: inline-block; }
 
 .infoTab {
-  background-color: #fdbd2d;
+  background-color: #5ac0e7;
   border-radius: 8px 8px 0px 0px;
   height: max-content;
   padding: 0.5rem 1rem;
@@ -557,7 +576,7 @@ nav {
   margin-bottom: 4rem; }
 
 .formTab {
-  background-color: #5ac0e7;
+  background-color: #fdbd2d;
   border-radius: 8px 8px 0px 0px;
   height: max-content;
   padding: 0.5rem 1rem;
@@ -586,4 +605,5 @@ nav {
 
 footer {
   background-color: #282E3E;
-  height: max-content; }
+  height: max-content;
+  padding: 2rem; }
