@@ -9,7 +9,7 @@ function recieveContactEmail(){
         Toastify({
             text: "Please complete the empty fields",
             duration: 2500,
-            style: {background: "#dc3545",}
+            style: {background: "#FC5E59",}
         }).showToast();
     } else {
         emailjs.send("service_a81pd16","template_jkifjby",{
@@ -21,7 +21,7 @@ function recieveContactEmail(){
         Toastify({
             text: "Form submitted, Thank you!",
             duration: 3000,
-            style: {background: "linear-gradient(to right, #00b09b, #96c93d)",}
+            style: {background: "#fdbd2d",}
         }).showToast();
     }
 }

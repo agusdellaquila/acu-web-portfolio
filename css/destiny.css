@@ -39,6 +39,15 @@
 .fs6 {
   font-size: 1rem; }
 
+.fs7 {
+  font-size: 0.75rem; }
+
+.fs8 {
+  font-size: 0.5rem; }
+
+.fs9 {
+  font-size: 0.25rem; }
+
 /* ________font weights */
 .fwNormal {
   font-weight: 500; }
@@ -50,6 +59,10 @@
   font-weight: 700; }
 
 /* ________decoration */
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #FDBD2E; }
+
 .noUnderline {
   text-decoration: none; }
 
@@ -344,6 +357,16 @@ body {
     grid-area: p3; }
   .project4 {
     grid-area: p4; }
+  .aboutMeCard {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly !important; }
+  .aboutMeText {
+    margin-left: 3rem; }
+  .serviceList {
+    flex-direction: row !important; }
+  .serviceList div {
+    margin: 0 3rem !important; }
   .contact {
     flex-direction: row !important;
     flex-wrap: wrap !important;
@@ -384,6 +407,16 @@ body {
     grid-area: p3; }
   .project4 {
     grid-area: p4; }
+  .aboutMeCard {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly !important; }
+  .aboutMeText {
+    margin-left: 3rem; }
+  .serviceList {
+    flex-direction: row !important; }
+  .serviceList div {
+    margin: 0 3rem !important; }
   .contact {
     flex-direction: row !important;
     flex-wrap: wrap !important;
@@ -455,8 +488,7 @@ nav {
   padding: 2rem 2rem 2rem 2rem; }
 
 .cardGrid button {
-  width: auto;
-  margin-top: 2rem; }
+  width: auto; }
 
 .cardDots {
   margin: 0px 0px 0px 10px; }
@@ -499,7 +531,11 @@ nav {
   justify-content: center;
   align-items: center;
   height: inherit;
+  width: 85%;
   padding: 2rem; }
+
+.aboutMeText {
+  max-width: 700px; }
 
 .acuPhoto {
   max-width: 300px;
@@ -520,7 +556,7 @@ nav {
   border-radius: 5px 5px 0px 0px;
   width: max-content;
   height: max-content;
-  padding: 1rem; }
+  padding: 0.5rem 0.5rem 1rem 0.5rem; }
 
 .cmdWindow {
   background-color: #000000;
@@ -543,6 +579,40 @@ nav {
   margin: 0px auto;
   height: max-content;
   width: 300px; }
+
+.servicesSection {
+  background-color: #282E3E;
+  color: #ffffff;
+  padding: 2rem; }
+
+.servicesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.serviceCard {
+  background-color: rgba(0, 0, 0, 0.122);
+  width: 115px;
+  height: 115px;
+  border-radius: 15px;
+  margin: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.serviceId {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; }
+
+.serviceDescription {
+  text-align: center; }
 
 .contact {
   display: flex;

@@ -43,7 +43,22 @@
     .project4 {
         grid-area: p4;
     }
-
+    //about me
+    .aboutMeCard{
+        display: flex;
+        flex-direction: row !important; 
+        justify-content: space-evenly !important;
+    }
+    .aboutMeText {
+        margin-left: 3rem;
+    }
+    //Services
+    .serviceList {
+        flex-direction: row !important;
+    }
+    .serviceList div{
+        margin: 0 3rem !important;
+    }
     //Contact me Desktop
     .contact {
         flex-direction: row !important;

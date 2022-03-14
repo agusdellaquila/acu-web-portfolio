@@ -40,6 +40,15 @@
 .fs6 {
     font-size: 1rem;
 }
+.fs7 {
+    font-size: 0.75rem;
+}
+.fs8 {
+    font-size: 0.5rem;
+}
+.fs9 {
+    font-size: 0.25rem;
+}
 /* ________font weights */
 .fwNormal {
     font-weight: 500;
@@ -53,6 +62,10 @@
     font-weight: 700;
 }
 /* ________decoration */
+.underline {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+}
 .noUnderline {
     text-decoration: none;
 }

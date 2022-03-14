@@ -1,0 +1,34 @@
+.servicesSection {
+    background-color: $secondaryColor;
+    color: $mainFontColor;
+    padding: 2rem;
+}
+.servicesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.serviceCard {
+    background-color: rgba(0, 0, 0, 0.122);
+    width: 115px;
+    height: 115px;
+    border-radius: 15px;
+    margin: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.serviceId {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.serviceDescription {
+    text-align: center;
+}

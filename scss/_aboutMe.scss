@@ -7,7 +7,11 @@
     justify-content: center;
     align-items: center;
     height: inherit;
+    width: 85%;
     padding: 2rem;
+}
+.aboutMeText {
+    max-width: 700px;
 }
 .acuPhoto {
     max-width: 300px;
