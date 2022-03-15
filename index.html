@@ -32,7 +32,30 @@
                 </div>
                 <!-- mobile nav -->
                 <div class="header_toggle">
-                    <img src="img/menuIcon.svg" id="header-toggle" class="desktopHidden me2 mt2" width="50px" height="30px"></img>
+                    <input id="navCheckbox" name="navCheckbox" type="checkbox">
+                    <label for="navCheckbox">
+                        <img src="img/menuIcon.svg" id="header-toggle" class="navIcon desktopHidden me2 mt2" width="50px" height="30px"></img>
+                    </label>
+                    <!-- toggling checkbox, creates this -->
+                    <div class="openedMobileNav">
+                        <ul class="mobileNav">
+                            <li class="noBullet">
+                                <a href="#" class="mainFontColor underline">Home</a>
+                            </li>
+                            <li class="noBullet">
+                                <a href="#about" class="mainFontColor underline">About me</a>
+                            </li>
+                            <li class="noBullet">
+                                <a href="#projects" class="mainFontColor underline">Projects</a>
+                            </li>
+                            <li class="noBullet">
+                                <a href="#skills" class="mainFontColor underline">Skills</a>
+                            </li>
+                            <li class="noBullet">
+                                <a href="#contact" class="mainFontColor underline">Contact me</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="mobileHidden navItemsContainer pb2">
                     <ul class="navItemsFather dFlex mt4">

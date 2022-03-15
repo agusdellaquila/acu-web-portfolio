@@ -4,6 +4,22 @@ nav {
     width: 100%;
     z-index: 1;
 }
+#navCheckbox {
+    display: none;
+}
+.openedMobileNav {
+    display: none;
+    background-color: #282e3ed5;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.mobileNav {
+    padding: 1rem;
+}
+#navCheckbox:checked ~ .openedMobileNav {
+    display: block;
+}
 .navBg {
     background-color: $secondaryColor;
 }
@@ -11,11 +27,15 @@ nav {
     height: 50px;
     justify-content: space-between; 
     padding-bottom: 5px;
+    width: 100%;
 }
 .navLogo {
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+//nav desktop
+
 .navItemsContainer {
     display: flex;
     align-items: flex-end;
