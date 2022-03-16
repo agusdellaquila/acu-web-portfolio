@@ -631,6 +631,13 @@ nav {
 .serviceDescription {
   text-align: center; }
 
+.seeCert {
+  color: #636e91;
+  background-color: #353a44a2;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0 0.5rem; }
+
 .contact {
   display: flex;
   flex-direction: column;
