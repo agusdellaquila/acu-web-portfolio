@@ -346,8 +346,7 @@ body {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "p1 p2"
-  "p3 p4";
+    grid-template-areas: "p1 p2" "p3 p4";
     place-items: center;
     height: inherit; }
   .project1 {
@@ -396,8 +395,7 @@ body {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "p1 p2"
- "p3 p4";
+    grid-template-areas: "p1 p2" "p3 p4";
     place-items: center;
     grid-column-gap: 10px;
     height: inherit; }
