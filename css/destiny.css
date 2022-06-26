@@ -345,6 +345,8 @@ body {
     display: inherit !important; }
   .desktopHidden {
     display: none !important; }
+  .presentationCard {
+    margin: 8rem auto !important; }
   .cardGrid {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
@@ -466,7 +468,7 @@ body {
   min-width: 185px;
   height: max-content;
   border-radius: 8px;
-  margin: 8rem auto;
+  margin: 1.5rem auto;
   box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); }
 
 .cardGrid {
@@ -475,7 +477,7 @@ body {
   justify-content: center;
   align-items: center;
   height: inherit;
-  padding: 2rem 2rem 2rem 2rem; }
+  padding: 0.5rem 2rem; }
 
 .cardGrid button {
   width: auto; }

@@ -7,9 +7,12 @@
         display: none !important;
     }
     //Presentation card Desktop
+    .presentationCard {
+        margin: 8rem auto !important;
+    }
     .cardGrid{
         display: grid !important; 
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;  
         grid-template-areas: 
             "info photo"; 
