@@ -40,6 +40,9 @@
         place-items: center;
         height: inherit;
     }
+    .projectImage {
+        width: 400px !important;
+    }
     .project1 {
         grid-area: p1;
     }
@@ -60,6 +63,9 @@
     }
     .aboutMeText {
         margin-left: 3rem;
+    }
+    .aboutMeParagraph {
+       max-width: 900px;
     }
     //Services
     .serviceList {

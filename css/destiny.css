@@ -6,6 +6,9 @@
   display: inherit !important; }
 
 /*  ______________________________Texts */
+.cursiveFont {
+  font-family: 'Rock Salt', cursive; }
+
 /* ________font alignments */
 .textAlignCenter {
   text-align: center; }
@@ -307,6 +310,22 @@
   padding-left: 3rem; }
 
 /*  ______________________________ */
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #282E3E; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FDBD2E; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -349,6 +368,8 @@ body {
     grid-template-areas: "p1 p2" "p3 p4";
     place-items: center;
     height: inherit; }
+  .projectImage {
+    width: 400px !important; }
   .project1 {
     grid-area: p1; }
   .project2 {
@@ -363,6 +384,8 @@ body {
     justify-content: space-evenly !important; }
   .aboutMeText {
     margin-left: 3rem; }
+  .aboutMeParagraph {
+    max-width: 900px; }
   .serviceList {
     flex-direction: row !important; }
   .serviceList div {
@@ -382,6 +405,13 @@ body {
     display: none !important; }
   .desktopHidden {
     display: inherit !important; }
+  .presentationCard {
+    width: 55% !important;
+    min-width: 185px;
+    height: max-content;
+    border-radius: 8px;
+    margin: 3rem auto !important;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); }
   .cardGrid {
     display: flex;
     flex-direction: column;
@@ -391,6 +421,8 @@ body {
   .cardGrid button {
     width: 45% !important;
     margin: 2rem 0rem !important; }
+  .animoji {
+    margin-bottom: 1rem; }
   .projectDisplays {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
@@ -427,65 +459,6 @@ body {
   .contactForm {
     margin: 0 auto; } }
 
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1; }
-
-#navCheckbox {
-  display: none; }
-
-.openedMobileNav {
-  display: none;
-  background-color: #282e3ed5;
-  position: absolute;
-  left: 0;
-  width: 100%; }
-
-.mobileNav {
-  padding: 1rem; }
-
-#navCheckbox:checked ~ .openedMobileNav {
-  display: block; }
-
-.navBg {
-  background-color: #282E3E; }
-
-.navContainer {
-  height: 50px;
-  justify-content: space-between;
-  padding-bottom: 5px;
-  width: 100%; }
-
-.navLogo {
-  align-items: flex-start;
-  justify-content: flex-start; }
-
-.navItemsContainer {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end; }
-
-.navItemsContainer ul li {
-  list-style-type: none;
-  margin: 0rem 3rem; }
-
-.navItemsContainer ul li:hover {
-  text-decoration: underline;
-  text-decoration-color: #FDBD2E; }
-
-.navItemsContainer ul li a {
-  color: #FFF8F0;
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 600;
-  align-items: flex-end; }
-
-.navItemsContainer ul li a:hover {
-  text-decoration-color: #FDBD2E;
-  color: #fff8f0ab; }
-
 /* presentation card */
 .presentationCard {
   background-color: #282E3E;
@@ -493,7 +466,7 @@ nav {
   min-width: 185px;
   height: max-content;
   border-radius: 8px;
-  margin-top: 15vh;
+  margin: 8rem auto;
   box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); }
 
 .cardGrid {
@@ -552,7 +525,7 @@ nav {
   padding: 2rem; }
 
 .aboutMeText {
-  max-width: 700px; }
+  max-width: 900px; }
 
 .acuPhoto {
   max-width: 300px;
@@ -565,7 +538,7 @@ nav {
 .cmdWindowTab {
   background-color: #CACACA;
   height: 56px;
-  width: 85%;
+  width: 90%;
   border-radius: 8px 8px 0px 0px; }
 
 .cmdTitle {
@@ -578,7 +551,7 @@ nav {
 .cmdWindow {
   background-color: #000000;
   height: max-content;
-  width: 85%;
+  width: 90%;
   border-radius: 0px 0px 8px 8px;
   box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); }
 
@@ -587,6 +560,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.projectImage {
+  width: 300px; }
 
 .card {
   display: flex;
@@ -600,7 +576,7 @@ nav {
 .servicesSection {
   background-color: #282E3E;
   color: #ffffff;
-  padding: 2rem; }
+  padding: 2rem 1rem; }
 
 .servicesContainer {
   display: flex;
@@ -660,7 +636,7 @@ nav {
   height: max-content;
   width: max-content;
   border-radius: 0px 0px 8px 8px;
-  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.7);
   padding: 0 1rem 1rem 1rem; }
 
 .infoItem {
@@ -681,7 +657,7 @@ nav {
   height: max-content;
   width: max-content;
   border-radius: 0px 0px 8px 8px;
-  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.7);
   padding: 1rem; }
 
 .contactForm input {

@@ -7,6 +7,9 @@
     display: inherit !important;
 }
 /*  ______________________________Texts */
+.cursiveFont {
+    font-family: 'Rock Salt', cursive;
+}
 /* ________font alignments */
 .textAlignCenter {
     text-align: center;
@@ -53,11 +56,9 @@
 .fwNormal {
     font-weight: 500;
 }
-
 .fwBold {
     font-weight: 600;
 }
-
 .fwBolder {
     font-weight: 700;
 }
@@ -311,3 +312,22 @@
     padding-left: 3rem;
 }
 /*  ______________________________ */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: $secondaryColor;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: $accentColor;
+}

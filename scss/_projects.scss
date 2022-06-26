@@ -1,7 +1,7 @@
 .cmdWindowTab {
     background-color: #CACACA;
     height: 56px;
-    width: 85%;
+    width: 90%;
     border-radius: 8px 8px 0px 0px;
 }
 .cmdTitle {
@@ -14,7 +14,7 @@
 .cmdWindow {
     background-color: #000000;
     height: max-content;
-    width: 85%;
+    width: 90%;
     border-radius: 0px 0px 8px 8px;
     box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
 }
@@ -23,6 +23,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.projectImage {
+    width: 300px;
 }
 .card{
     display: flex;

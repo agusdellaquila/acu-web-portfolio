@@ -8,6 +8,14 @@
     }
     
     //Presentation card Desktop
+    .presentationCard {
+        width: 55% !important;
+        min-width: 185px;
+        height: max-content;
+        border-radius: 8px;
+        margin: 3rem auto !important;
+        box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    }
     .cardGrid{
         display: flex;
         flex-direction: column; 
@@ -18,6 +26,9 @@
     .cardGrid button {
         width: 45% !important;
         margin: 2rem 0rem !important;
+    }
+    .animoji {
+        margin-bottom: 1rem;
     }
     //Projects Desktop
     .projectDisplays {

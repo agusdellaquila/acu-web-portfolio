@@ -11,8 +11,10 @@
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <!--Link css-->
     <link rel="stylesheet" href="css/destiny.css">
     <!--animate scroll css-->
@@ -22,64 +24,6 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navBg">
-            <div class="dFlex navContainer">
-                <div class="navLogo ms2">
-                    <a href="#">
-                        <img src="img/animoji/animojiPc.svg" alt="my dev animoji" width="50px" height="50px"/>
-                    </a>
-                </div>
-                <!-- mobile nav -->
-                <div class="header_toggle">
-                    <input id="navCheckbox" name="navCheckbox" type="checkbox">
-                    <label for="navCheckbox">
-                        <img src="img/menuIcon.svg" id="header-toggle" class="navIcon desktopHidden me2 mt2" width="50px" height="30px"></img>
-                    </label>
-                    <!-- toggling checkbox, creates this -->
-                    <div class="openedMobileNav">
-                        <ul class="mobileNav">
-                            <li class="noBullet">
-                                <a href="#" class="mainFontColor underline">Home</a>
-                            </li>
-                            <li class="noBullet">
-                                <a href="#about" class="mainFontColor underline">About me</a>
-                            </li>
-                            <li class="noBullet">
-                                <a href="#projects" class="mainFontColor underline">Projects</a>
-                            </li>
-                            <li class="noBullet">
-                                <a href="#skills" class="mainFontColor underline">Skills</a>
-                            </li>
-                            <li class="noBullet">
-                                <a href="#contact" class="mainFontColor underline">Contact me</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mobileHidden navItemsContainer pb2">
-                    <ul class="navItemsFather dFlex mt4">
-                        <li class="">
-                            <a href="#" class="">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about" class="">About me</a>
-                        </li>
-                        <li>
-                            <a href="#projects" class="">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#skills" class="">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="">Contact me</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
     <section>
         <!-- SECTION: PRESENTATION -->
         <section id="home" class="presentationCard containerFluid">
@@ -93,10 +37,9 @@
             <section class="cardGrid">
                 <!--my info-->
                 <section class="cardInfo dFlexCol" data-aos="fade-right" data-aos-duration="1000">
-                    <h1 class="fs1 mainFontColor fwBolder mb1">Agustin <br> Dell' Aquila</h1>
+                    <h1 class="fs1 mainFontColor fwBolder mb1"><span class="cursiveFont">Agustín</span> <br> Dell' Aquila</h1>
                     <p class="accentFontColor fs4 fwBold mb3">Front end Developer</p>
-                    <p class="mainFontColor fs5 mb4">I’m a professional developer based in <br> Buenos Aires. People
-                        call me <span class="accentFontColor fwBold">Acu</span></p>
+                    <p class="mainFontColor fs5 mb4">I’m a professional developer based in <br> Buenos Aires. People call me <span class="accentFontColor fwBold">Acu</span></p>
                     <a href="#contact" class="btn btnPrimary fs6" data-aos="fade-right" data-aos-duration="1000">Contact me</a>
                 </section>
                 <!--my animoji-->
@@ -115,25 +58,30 @@
                 </section>
                 <!--about me-->
                 <section class="aboutMeText dFlexCol centered">
-                    <h2 class="fs2 fwBold mb3 mainFontColor mt4 underline">About Me</h2>
-                    <p class="fwBold centered textAlignCenter mainFontColor">I'm a Junior Frontend developer to become a Fullstack developer in a couple of months. <br> <br>
-                        I love digital organization and to achieve this I make use of Notion, TickTick and Google Calendar with the Getting Things Done (GTD) method. <br> <br>
+                    <p class="aboutMeParagraph fwBold centered textAlignCenter mainFontColor">
+                        I am a passionate Web Developer driven by motivation and desire to learn the field inside and out.                         
+                    </p>
+                    <p class="aboutMeParagraph fwBold centered textAlignCenter mainFontColor mt3">
+                        With critical thinking and coordination skills, I execute tasks in detail while keeping development progress aligned with project goals and can adapt to changing demands to secure project success.
+                    </p>
+                    <p class="aboutMeParagraph fwBold centered textAlignCenter mainFontColor mt3">
+                        I am an organized person and to achieve this I make use of  the Getting Things Done(GTD) method.
+                    </p>
+                    <p class="aboutMeParagraph fwBold centered textAlignCenter mainFontColor mt3">
                         The things that I enjoy the most are programming and playing videogames. 
                     </p>
-                    <a href="https://drive.google.com/file/d/1vCR19IxOtun1w2piMAg95qT1DpQebOTQ/view?usp=sharing" target="_blank" class="btn btnPrimary fs6 mt4">
+                    <a href="./img/cvActual_en_4.pdf" download target="_blank" class="btn btnPrimary fs6 mt4">
                         <section class="centered">
                             <img src="img/aboutMe/icons8-vista-previa-del-documento-48.png" width="30px">
-                            <span class="ms2">Preview CV</span>
+                            <span class="ms2">Download CV</span>
                         </section>
                     </a>
-                    <span class="mainFontColor mt3 fs7 fwBold">(Yes I know, no one likes to download files)</span>
                 </section>
             </section>
         </section>
 
         <!-- SECTION: PROJECTS -->
         <section id="projects" class="centered dFlexCol mt5">
-            <h2 class="fs2 fwBold mb4 underline">Some things I’ve built!</h2>
             <div class="cmdWindowTab">
                 <p class="cmdTitle fwBold ms4 mt3">Command Prompt</p>
             </div>
@@ -145,93 +93,32 @@
                 <!-- _________________PROJECTS_________________ -->
                 <div class="projectDisplays mt5 ms3 me3 mb5">
                     <div class="card">
-                        <img src="./img/projectShowcase/rec0rder/rec0rder.gif" alt="rec0rder" width="400px" height="250px">
-                        <h2 class="mainFontColor mt4 fs3">Rec0rder</h2>
-                        <ul class="dFlex noBullet">
-                            <li><img src="img/services/icons8-reaccionar-nativo.svg" width="32px" height="32px"/></li>
-                            <li><img src="https://eowm.github.io/Portfolio/images_test/express.png" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-javascript.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-git.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-nodejs.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-html-5.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-css3.svg" width="32px" height="32px"/></li>
-                            <li><img src="https://img.icons8.com/color/48/000000/webpack.png" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-figma.svg" width="32px" height="32px"/></li>
-                        </ul>
-                        <p class="mainFontColor textAlignCenter mt1">Screen Recorder App / Chrome extension</p>
-                        <a href="https://github.com/agusdellaquila/rec0rder" target="_blank" class="mainFontColor mt2 mb5 accentFontColor fwBold">Take a look!</a>
+                        <a href="https://github.com/agusdellaquila/rec0rder" target="_blank" class="noUnderline mainFontColor mt2 mb5 accentFontColor fwBold">
+                            <img class="projectImage" src="./img/projectShowcase/rec0rder/rec0rder.gif" alt="rec0rder">
+                            <h2 class="mainFontColor mt4 fs3 underline">Rec0rder</h2>
+                            <p class="mainFontColor noUnderline fwLight">Screen recorder chrome extension</p>
+                        </a>
                     </div>
                     <div class="card">
-                        <img src="img/projectShowcase/enpie/sc4.jpg" alt="En Pie Wines" width="400px" height="250px">
-                        <h2 class="mainFontColor mt4 fs3">EnPie Wines</h2>
-                        <ul class="dFlex noBullet">
-                            <li><img src="img/services/icons8-reaccionar-nativo.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-javascript.svg" width="32px" height="32px"/></li>
-                            <li><img src="https://img.icons8.com/color/48/000000/google-firebase-console.png" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-git.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-nodejs.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-html-5.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-css3.svg" width="32px" height="32px"/></li>
-                            <li><img src="https://img.icons8.com/color/48/000000/webpack.png" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-figma.svg" width="32px" height="32px"/></li>
-                        </ul>
-                        <p class="mainFontColor textAlignCenter mt1">Wine e-commerce for a famous Argentinian wine seller</p>
-                        <a href="https://en-pie-wines.vercel.app/" target="_blank" class="mainFontColor mt2 mb5 accentFontColor fwBold">Take a look!</a>
+                        <a href="https://en-pie-wines.vercel.app/" target="_blank" class="noUnderline mainFontColor mt2 mb5 accentFontColor fwBold">
+                            <img class="projectImage" src="img/projectShowcase/enpie/sc4.jpg" alt="En Pie Wines">
+                            <h2 class="mainFontColor mt4 fs3 underline">EnPie Wines</h2>
+                            <p class="mainFontColor noUnderline fwLight">Liquor store e-commerce</p>
+                        </a>
                     </div>
                     <div class="card">
-                        <img src="img/projectShowcase/acudex/sc1.jpg" alt="AcuDex" width="400px" height="250px">
-                        <h2 class="mainFontColor mt4 fs3">AcuDex</h2>
-                        <ul class="dFlex noBullet">
-                            <li><img src="img/services/icons8-reaccionar-nativo.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-javascript.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-git.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-nodejs.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-html-5.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-css3.svg" width="32px" height="32px"/></li>
-                            <li><img src="https://img.icons8.com/color/48/000000/webpack.png" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-figma.svg" width="32px" height="32px"/></li>
-                        </ul>
-                        <p class="mainFontColor textAlignCenter mt1">Pokedex created using the famous PokeAPI</p>
-                        <a href="https://acu-dex.vercel.app/" target="_blank" class="mainFontColor mt2 mb5 accentFontColor fwBold">Take a look!</a>
+                        <a href="https://acu-dex.vercel.app/" target="_blank" class="noUnderline mainFontColor mt2 mb5 accentFontColor fwBold">
+                            <img class="projectImage" src="img/projectShowcase/acudex/sc1.jpg" alt="AcuDex">
+                            <h2 class="mainFontColor mt4 fs3 underline">AcuDex</h2>
+                            <p class="mainFontColor noUnderline fwLight">My own take at the PokeApi</p>
+                        </a>
                     </div>
                     <div class="card">
-                        <img src="img/projectShowcase/cobra/sc4.jpg" alt="Cobra Denim Jeans" width="450px" height="250px">
-                        <h2 class="mainFontColor mt4 fs3">Cobra Denim</h2>
-                        <ul class="dFlex noBullet">
-                            <li><img src="img/services/icons8-javascript.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-git.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-html-5.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-css3.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-sass-avatar.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-figma.svg" width="32px" height="32px"/></li>
-                        </ul>
-                        <p class="mainFontColor textAlignCenter mt1">This is my first ever website, a fully fledged e-commerce based on a brand designed by me</p>
-                        <a href="https://cobra-denim.vercel.app/" target="_blank" class="mainFontColor mt2 mb5 accentFontColor fwBold">Take a look!</a>
-                    </div>
-                    <div class="card">
-                        <img src="img/projectShowcase/calqlator/Captura de pantalla 2022-06-06 195014.jpg" alt="Calqlator" height="250px">
-                        <h2 class="mainFontColor mt4 fs3">Calqlator</h2>
-                        <ul class="dFlex noBullet">
-                            <li><img src="img/services/icons8-reaccionar-nativo.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-javascript.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-git.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-nodejs.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-html-5.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-css3.svg" width="32px" height="32px"/></li>
-                            <li><img src="https://img.icons8.com/color/48/000000/webpack.png" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-figma.svg" width="32px" height="32px"/></li>
-                        </ul>
-                        <p class="mainFontColor textAlignCenter mt1">Calculator I developed with react-native for a possible mobile app</p>                    </div>
-                    <div class="card">
-                        <img src="img/animoji/animojiPc.svg" alt="Acu's Portfolio" width="400px" height="250px">
-                        <h2 class="mainFontColor mt4 fs3">This website!</h2>
-                        <ul class="dFlex noBullet">
-                            <li><img src="img/services/icons8-git.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-html-5.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-css3.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-sass-avatar.svg" width="32px" height="32px"/></li>
-                            <li><img src="img/services/icons8-figma.svg" width="32px" height="32px"/></li>
-                        </ul>
+                        <a href="https://cobra-denim.vercel.app/" target="_blank" class="noUnderline mainFontColor mt2 mb5 accentFontColor fwBold">
+                            <img class="projectImage" src="img/projectShowcase/cobra/sc4.jpg" alt="Cobra Denim Jeans">
+                            <h2 class="mainFontColor mt4 fs3 underline">Cobra Denim</h2>
+                            <p class="mainFontColor noUnderline fwLight">Fashion brand e-commerce</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -241,12 +128,6 @@
         <section id="skills" class="servicesSection dFlexCol centered mt5">
             <h2 class="fs2 fwBold mb4 underline">My skill & tool box</h2>
             <section class="servicesContainer">
-                <section class="serviceCard">
-                    <div class="serviceId">
-                        <img src="img/services/icons8-git.svg" width="48px" height="48px"/>
-                        <p class="pt2">Git</p>
-                    </div>
-                </section>
                 <section class="serviceCard">
                     <a href="https://drive.google.com/file/d/1V66PoG_dijl9CSiG-rAlyjNzNUJYtj0A/view?usp=sharing" target="_blank" class="noUnderline mainFontColor">
                         <div class="serviceId">
@@ -272,7 +153,7 @@
                 <section class="serviceCard">
                     <div class="serviceId">
                         <img src="img/services/icons8-nodejs.svg" width="48px" height="48px"/>
-                        <p class="pt2">Node</p>
+                        <p class="pt2">Node.js</p>
                     </div>
                 </section>
                 <section class="serviceCard">
@@ -283,8 +164,32 @@
                 </section>
                 <section class="serviceCard">
                     <div class="serviceId">
-                        <img src="https://img.icons8.com/color/48/000000/google-firebase-console.png" width="48px" height="48px"/>
-                        <p class="pt2">Firestore</p>
+                        <img src="https://img.icons8.com/color/48/000000/sql.png" width="48px" height="48px"/>
+                        <p class="pt2">SQL</p>
+                    </div>
+                </section>
+                <section class="serviceCard">
+                    <div class="serviceId">
+                        <img src="img/services/icons8-mongodb.svg" width="48px" height="48px"/>
+                        <p class="pt2">MongoDb</p>
+                    </div>
+                </section>
+                <section class="serviceCard">
+                    <div class="serviceId">
+                        <img src="https://img.icons8.com/color/48/000000/adobe-illustrator--v1.png" width="48px" height="48px"/>
+                        <p class="pt2">Illustrator</p>
+                    </div>
+                </section>
+                <section class="serviceCard">
+                    <div class="serviceId">
+                        <img src="img/services/icons8-figma.svg" width="48px" height="48px"/>
+                        <p class="pt2">Figma</p>
+                    </div>
+                </section>
+                <section class="serviceCard">
+                    <div class="serviceId">
+                        <img src="img/services/icons8-git.svg" width="48px" height="48px"/>
+                        <p class="pt2">Git</p>
                     </div>
                 </section>
                 <section class="serviceCard">
@@ -321,18 +226,6 @@
                     </a>
                 </section>
                 <section class="serviceCard">
-                    <div class="serviceId">
-                        <img src="https://img.icons8.com/color/48/000000/webpack.png" width="48px" height="48px"/>
-                        <p class="pt2">Webpack</p>
-                    </div>
-                </section>
-                <section class="serviceCard">
-                    <div class="serviceId">
-                        <img src="https://img.icons8.com/color/48/000000/material-ui.png" width="48px" height="48px"/>
-                        <p class="pt2">MaterialUI</p>
-                    </div>
-                </section>
-                <section class="serviceCard">
                     <a href="https://drive.google.com/file/d/11w3Dl14stMFMjyOkGutUB1nMs6ZbhIDn/view?usp=sharing" target="_blank" class="noUnderline mainFontColor">
                         <div class="serviceId">
                             <img src="img/services/icons8-oreja.svg" width="48px" height="48px"/>
@@ -345,8 +238,14 @@
                 </section>
                 <section class="serviceCard">
                     <div class="serviceId">
-                        <img src="img/services/icons8-python.svg" width="48px" height="48px"/>
-                        <p class="pt2">Python</p>
+                        <img src="https://img.icons8.com/color/48/000000/google-firebase-console.png" width="48px" height="48px"/>
+                        <p class="pt2">Firestore</p>
+                    </div>
+                </section>
+                <section class="serviceCard">
+                    <div class="serviceId">
+                        <img src="https://img.icons8.com/color/48/000000/webflow.png" width="48px" height="48px"/>
+                        <p class="pt2">WebFlow</p>
                     </div>
                 </section>
                 <section class="serviceCard">
@@ -355,24 +254,11 @@
                         <p class="pt2">Notion</p>
                     </div>
                 </section>
-                <section class="serviceCard">
-                    <div class="serviceId">
-                        <img src="img/services/icons8-figma.svg" width="48px" height="48px"/>
-                        <p class="pt2">Figma</p>
-                    </div>
-                </section>
-                <!-- <section class="serviceCard">
-                    <div class="serviceId">
-                        <img src="img/services/icons8-mongodb.svg" width="48px" height="48px"/>
-                        <p class="pt2 underline">Soon...</p>
-                    </div>
-                </section> -->
             </section> 
         </section>
 
         <!-- SECTION:  CONTACT ME-->
         <section id='contact' class="contactContainer centered dFlexCol mt5">
-            <h2 class="fs2 fwBold mb4 underline">Contact Me</h2>
             <div class="contact containerFluid">
                 <div class="contactInfo">
                     <!-- yellow form tab -->
@@ -399,13 +285,13 @@
                 </div>
                 <div class="contactForm">
                     <!-- light blue form tab -->
-                    <div class="formTab"><p class="fwBold fs5">Lets talk!</p></div>
+                    <div class="formTab"><p class="fwBold fs5">Let's talk!</p></div>
                     <!-- contact form -->
                     <div class="formWindow dFlexCol">
-                        <p class="fwBold">Your full name</p>
+                        <p class="fwBold">Full name</p>
                         <input id="contactFullName" class="formInput contactBoxes mb3" type="text" name="nombre"/>
     
-                        <p class="fwBold">Your email</p>
+                        <p class="fwBold">Email</p>
                         <input id="contactEmail" class="formInput contactBoxes mb3" type="email" name="mail"/>
                         
                         <p class="fwBold">Subject</p>
